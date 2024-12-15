@@ -7,6 +7,7 @@ const taskUpdate = async (id) =>{
     const tasks = await response.json();
     const task = tasks.find((tarea) => tarea.id === id);
 
+    document.getElementById('id').value = task.id;
     document.getElementById('title').value = task.title;
     document.getElementById('description').value = task.description;
     document.getElementById('status').value = task.status;
@@ -23,12 +24,17 @@ const fetchTasks = async () => {
     
     tasks.forEach(task => {
         const row = document.createElement('tr');
+        const statusColor = task.status === 'Completada'? 'bg-success bg-opacity-75 text-light' : (task.status === 'Pendiente'? 'bg-danger-subtle' : 'bg-warning-subtle');
+        // if(task.status=== 'Completado'){
+
+        // }
         row.innerHTML = `
             <tr>
                 <th scope="row">${task.id}</th>
                 <td>${task.title}</td>
                 <td>${task.description}</td>
-                <td>${task.status}</td>
+                <td>
+                <button class= "btn ${statusColor}" >${task.status}</button>
                 <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="taskUpdate(${task.id})">Editar</button>
                     <button class="btn btn-danger" onclick="deleteTask(${task.id})">Eliminar</button>

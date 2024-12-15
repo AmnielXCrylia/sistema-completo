@@ -1,11 +1,5 @@
 [
   {
-    "id": 1734219166083,
-    "title": "Editado",
-    "description": "Descripción editado",
-    "status": "Editado"
-  },
-  {
     "id": 1734245317392,
     "title": "comprar tacos",
     "description": "Ir a la taquería a comprar tacos",
@@ -16,5 +10,11 @@
     "title": "un cuarto de queso",
     "description": "Ir a comprar un cuarto de queso",
     "status": "Pendiente"
+  },
+  {
+    "id": 1734279921070,
+    "title": "Huevos",
+    "description": "Ir a la frutería a comprar una cartera de huevos",
+    "status": "Completada"
   }
 ]

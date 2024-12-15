@@ -28,6 +28,12 @@ ul{
     width: 100%;
 }
 
+.fila-inProgress{
+    align-self: center;
+    height: 100%;
+    background-color: lightgreen;
+}
+
 @media (max-width: 806px) {
     .formulario{
         width: 100%;

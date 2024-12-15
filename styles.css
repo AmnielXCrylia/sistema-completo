@@ -1,0 +1,36 @@
+ul{
+    list-style: none;
+}
+
+.content-container{
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.formulario{
+    width: 70%;
+    /* background-color: wheat; */
+}
+
+.lista{
+    
+    width: 100%;
+    color: white;
+    background-color: lightslategrey;
+}
+
+.rounded-table{
+    border-collapse: collapse;
+    border-radius: 15px ;
+}
+
+.btn-agregar{
+    width: 100%;
+}
+
+@media (max-width: 806px) {
+    .formulario{
+        width: 100%;
+        /* background-color: wheat; */
+    }
+  }

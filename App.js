@@ -1,4 +1,5 @@
-const API_URL = 'http://localhost:3000/tasks';
+// const API_URL = 'http://localhost:3000/tasks';
+const API_URL = 'https://sistema-completo-52mf.onrender.com/tasks';
 
 const taskUpdate = async (id) =>{
     console.log(id);

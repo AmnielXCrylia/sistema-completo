@@ -16,7 +16,7 @@ app.get('/tasks', (req, res) => {
     res.json(data);
 });
 
-// Ruta para crear una tarea
+// Ruta para crear o actualizar una tarea
 app.post('/tasks', (req, res) => {
     const tasks = JSON.parse(fs.readFileSync('tasks.json', 'utf-8'));
     const newTask = { id: Date.now(), ...req.body };
@@ -45,4 +45,4 @@ app.delete('/tasks/:id', (req, res) => {
 });
 
 // Iniciar el servidor
-app.listen(PORT, () => console.log(`Servidor corriendo en http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`https://sistema-completo-52mf.onrender.com/tasks:${PORT}`));
